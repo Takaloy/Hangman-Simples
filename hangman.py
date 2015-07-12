@@ -3,6 +3,11 @@
 #imports
 import random
 
+#function
+def request_input():
+    guess = input("Enter your guess: ")
+    return guess.upper()
+
 #declare constants . well actually python doesn't have any constants! It's a lie
 HANGMAN = (
     """
@@ -97,13 +102,11 @@ while wrong < CHANCES and displayable != answer:
     print("\nLetters gussed so far : ", guessed)
     print("\nHere's your word : ", displayable)
     
-    guess = input("\n\nEnter your guess: ")
-    guess.upper()
+    guess = request_input()     #wait what do you mean python has no do/while loop?!
 
     while guess in guessed:
         print ("You've already guessed the letter", guess)
-        guess = input("Enter your guess: ")
-        guess.upper()
+        guess = request_input()
 
     guessed.append(guess)
 
