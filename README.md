@@ -1,5 +1,5 @@
 # tutorial-python-hangman
-Python Hangman Example
+Text based Python Hangman Example
 
 I'm playing with Python! 
 Day 1 attempt at making a simple hangman game, based off a guide I found.
